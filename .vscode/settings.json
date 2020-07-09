@@ -1,0 +1,8 @@
+{
+    "json.schemas": [
+    
+    ],
+    "npm.enableScriptExplorer": true,
+    "workbench.settings.editor": "json",
+    "html-css-class-completion.enableEmmetSupport": true
+}
