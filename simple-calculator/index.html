@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Raluca's Simple Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        function calc() {
+            var n1 = parseFloat(document.getElementById('n1').value);
+            var n2 = parseFloat(document.getElementById('n2').value);
+
+            var oper = document.getElementById('operators').value;
+
+            if (oper === '+') {
+                document.getElementById('result').value = n1 + n2;
+            }
+
+            if (oper === '-') {
+                document.getElementById('result').value = n1 - n2;
+            }
+
+            if (oper === '/') {
+                document.getElementById('result').value = n1 / n2;
+            }
+
+            if (oper === 'X') {
+                document.getElementById('result').value = n1 * n2;
+            }
+        }
+
+    </script>
+
+</head>
+
+<body style=" background: linear-gradient(to right,#2c5364, #203a43, #0f2027);
+  height: 100vh;
+  color: #fff;"></body>
+    <div style="padding-top: 50px"><h1 style="text-align: center;">Raluca's Simple Calculator</h1>  </div>
+    <hr style="margin-bottom: 50px;">
+
+
+    <div style="text-align: center;"><input style="height: 30px; margin-right: 20px;" type="text" id="n1" />
+    
+
+            <select style="height: 30px; margin-right: 20px;" id="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="X">X</option>
+            </select>
+
+            <input style="height: 30px; margin-right: 20px;" type="text" id="n2" />
+
+            <button style=" height: 30px; width: 30px; margin-right: 20px;" onclick="calc();">=</button>
+
+            <input style="height: 30px; margin-right: 20px;" type="text" id="result" />
+    </div>
+
+  <footer style="padding:30px; text-align: center;">
+    
+    <p><a style="color: rgb(239, 252, 96); " href="https://github.com/RalucaElisabetaR/simple-calculator">GitHub Repository</a></p>
+ </footer>
+</body>
+
+</html>
